@@ -7,3 +7,5 @@ CREATE TABLE Groupmates (
     Name VARCHAR(50),
     Role VARCHAR(50)
 );
+
+SHOW TABLES;
