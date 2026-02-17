@@ -16,3 +16,12 @@ SET Name = 'Nicko Triviño'
 WHERE ID = 4;
 
 SELECT * FROM Groupmates WHERE ID = 4;
+
+INSERT INTO Groupmates (ID, Name, Role) VALUES(
+    99,
+    'Dummy Guy',
+    'Slacker'
+);
+
+SELECT * FROM Groupmates;
+SELECT * FROM Groupmates WHERE ID = 99;
