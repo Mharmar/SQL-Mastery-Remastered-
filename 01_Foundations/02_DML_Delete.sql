@@ -1,0 +1,2 @@
+DELETE FROM Groupmates
+WHERE ID = 99;
