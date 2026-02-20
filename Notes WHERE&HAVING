@@ -1,0 +1,16 @@
+The Concept: WHERE vs. HAVING
+This is the most common interview question for Junior SQL Developers. Memorize this.
+
+WHERE: Filters rows before they are grouped.
+
+Example: "I only want to count people whose Name starts with 'J'." (Filters Jhon, Justin).
+
+HAVING: Filters groups after they are aggregated.
+
+Example: "I only want to see Departments that have more than 2 people."
+
+The Analogy:
+
+WHERE is the bouncer at the club door. He checks ID before you get in.
+
+HAVING is the VIP manager inside. He checks which tables bought the most bottles.

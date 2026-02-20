@@ -1,0 +1,14 @@
+We use Aggregate Functions. These take many rows and squash them into a single number.
+
+The Big 5:
+
+COUNT(*): Counts how many rows exist.
+
+SUM(Column): Adds up numbers (e.g., Total Sales).
+
+AVG(Column): Calculates the average.
+
+MIN(Column): Finds the smallest value.
+
+MAX(Column): Finds the largest value.
+
