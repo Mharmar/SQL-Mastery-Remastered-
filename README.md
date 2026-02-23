@@ -14,7 +14,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 **1. Groupmates**
 * ID (Primary Key)
 * Name
-* Role
+* Role / Department
 * ProjectID (Foreign Key)
 
 **2. Projects**
@@ -61,6 +61,11 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Generated human-readable assignment reports
 * Replaced numeric IDs with meaningful project names
 
+### Phase 8: Filtering Groups
+* Differentiated between `WHERE` (filters rows *before* they are grouped) and `HAVING` (filters groups *after* they are aggregated).
+* Optimized sorting queries by using aliases in the `ORDER BY` clause (e.g., `ORDER BY Headcount DESC`) instead of recalculating aggregate functions.
+* Applied business logic to filter groups (e.g., isolating departments with a headcount greater than 1).
+
 ---
 
 ## Upcoming Topics
@@ -81,4 +86,5 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Single-table queries
 * Multi-table joins
 * Foreign key relationships
-* Clean SQL structure
+* Aggregation and group filtering (`WHERE` vs. `HAVING`)
+* Clean SQL structure and alias optimization
