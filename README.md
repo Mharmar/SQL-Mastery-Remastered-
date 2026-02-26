@@ -32,11 +32,11 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Applied primary key constraints
 * Understood DDL vs DML
 
-### Phase 2: Data Manipulation
+### Phase 2: Data Manipulation & Cleaning
 * Inserted records using INSERT
 * Retrieved data using SELECT
-* Updated records using UPDATE
-* Deleted records safely using DELETE
+* Updated records using UPDATE (Targeted data cleaning using Primary Keys)
+* Deleted records safely using DELETE (Handled duplicate entries)
 * Practiced filtering with WHERE
 * Practiced pattern matching with LIKE
 
@@ -44,7 +44,6 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Used COUNT(*)
 * Implemented GROUP BY
 * Learned rule: If you SELECT it, you must GROUP BY it
-* Used HAVING to filter grouped data
 
 ### Phase 4: Multi-Table Architecture
 * Created Projects table
@@ -52,27 +51,34 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Cleaned and corrected data
 
 ### Phase 5: Relational Integrity
-* Added ProjectID to Groupmates
-* Established Foreign Key relationship
-* Assigned members to projects
+* Added ProjectID column to Groupmates using ALTER TABLE
+* Established Foreign Key relationship using ADD CONSTRAINT
+* Assigned members to projects using UPDATE and the IN operator for multiple conditions
 
 ### Phase 6: INNER JOIN
 * Joined Groupmates and Projects
-* Generated human-readable assignment reports
-* Replaced numeric IDs with meaningful project names
+* Explicitly referenced columns (Table.Column) to prevent ambiguity
+* Generated human-readable assignment reports matching Foreign Keys to Primary Keys
 
-### Phase 8: Filtering Groups
+### Phase 7: Filtering Groups
 * Differentiated between `WHERE` (filters rows *before* they are grouped) and `HAVING` (filters groups *after* they are aggregated).
-* Optimized sorting queries by using aliases in the `ORDER BY` clause (e.g., `ORDER BY Headcount DESC`) instead of recalculating aggregate functions.
-* Applied business logic to filter groups (e.g., isolating departments with a headcount greater than 1).
+* Optimized sorting queries by using aliases in the `ORDER BY` clause.
+* Applied business logic to filter groups based on aggregated data.
+
+### Phase 8: Table Aliasing & Outer Joins
+* Implemented table aliasing (`AS`) for cleaner, more readable queries.
+* Executed `LEFT JOIN` to retrieve all records from the primary table, including those without matching foreign key relationships (e.g., unassigned employees).
+
+### Phase 9: Subqueries (Nested Queries)
+* Introduced multi-step database logic using subqueries.
+* Utilized inner queries to dynamically calculate values (like `MAX(ID)`).
+* Passed inner query results to outer queries for dynamic filtering without hardcoding values.
 
 ---
 
 ## Upcoming Topics
 
-* LEFT JOIN
 * RIGHT JOIN
-* Subqueries
 * CTE (Common Table Expressions)
 * Indexing
 * Query optimization
@@ -84,7 +90,8 @@ Build real understanding through hands-on execution, clean schema design, and pr
 
 **Confident with:**
 * Single-table queries
-* Multi-table joins
-* Foreign key relationships
+* Multi-table joins (INNER and LEFT)
+* Foreign key relationships and Constraints
 * Aggregation and group filtering (`WHERE` vs. `HAVING`)
+* Subqueries and dynamic data retrieval
 * Clean SQL structure and alias optimization
