@@ -1,0 +1,9 @@
+USE JMS_Salapare;
+
+START TRANSACTION;
+
+DELETE FROM Groupmates;
+
+SELECT * FROM Groupmates;
+
+ROLLBACK;
