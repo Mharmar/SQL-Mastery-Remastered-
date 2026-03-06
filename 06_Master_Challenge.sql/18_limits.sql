@@ -1,0 +1,6 @@
+USE JMS_Salapare;
+
+SELECT *
+FROM Threat_Logs
+ORDER BY LogID DESC
+LIMIT 2;
