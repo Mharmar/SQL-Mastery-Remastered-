@@ -7,6 +7,16 @@ Build real understanding through hands-on execution, clean schema design, and pr
 
 ---
 
+## Repository Structure
+
+* **01_Fundamentals/**: DDL and DML operations, table creation, and basic data manipulation.
+* **02_Aggregation/**: GROUP BY, HAVING, COUNT, and filtering groups.
+* **03_Relational_Architecture/**: Foreign keys, constraints, and multi-table setup.
+* **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
+* **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
+
+---
+
 ## Database Schema: JMS_Salapare
 
 ### Core Tables
