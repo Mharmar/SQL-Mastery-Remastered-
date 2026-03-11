@@ -14,6 +14,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * **03_Relational_Architecture/**: Foreign keys, constraints, and multi-table setup.
 * **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
 * **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
+* **06_Data_Refinement/**: Sorting, limiting, distinct values, and string formatting.
 
 ---
 
@@ -31,6 +32,16 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * ProjectID (Primary Key)
 * ProjectName
 * Deadline
+
+**3. Threat_Logs**
+* LogID (Primary Key)
+* ThreatType
+* (Additional columns based on schema)
+
+**4. Protected_Users**
+* Username
+* DeviceType
+* (Additional columns based on schema)
 
 ---
 
@@ -86,6 +97,18 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Utilized inner queries to dynamically calculate values (like MAX(ID)).
 * Passed inner query results to outer queries for dynamic filtering without hardcoding values.
 
+### Phase 10: Limiting and Sorting Results
+* Controlled query output volume using the LIMIT clause.
+* Ordered result sets descending using ORDER BY DESC to fetch the most recent records efficiently.
+
+### Phase 11: Unique Data Retrieval
+* Implemented the DISTINCT keyword to isolate and identify unique values within specific columns (e.g., extracting unique threat types from logs).
+
+### Phase 12: Database Exploration & String Functions
+* Navigated the database architecture using SHOW TABLES.
+* Manipulated text data output using string functions like UPPER() to standardize formatting.
+* Used column aliasing (AS) to rename output columns for cleaner reporting.
+
 ---
 
 ## Upcoming Topics
@@ -106,4 +129,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Foreign key relationships and Constraints
 * Aggregation and group filtering (WHERE vs. HAVING)
 * Subqueries and dynamic data retrieval
+* Result restriction and sorting (LIMIT, ORDER BY)
+* Unique value isolation (DISTINCT)
+* Data formatting and string functions (UPPER)
 * Clean SQL structure and alias optimization
