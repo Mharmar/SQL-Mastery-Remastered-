@@ -14,7 +14,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * **03_Relational_Architecture/**: Foreign keys, constraints, and multi-table setup.
 * **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
 * **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
-* **06_Data_Refinement/**: Sorting, limiting, distinct values, and string formatting.
+* **06_Data_Refinement/**: Sorting, limiting, distinct values, string formatting, and time functions.
 
 ---
 
@@ -36,6 +36,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 **3. Threat_Logs**
 * LogID (Primary Key)
 * ThreatType
+* Status
 * (Additional columns based on schema)
 
 **4. Protected_Users**
@@ -109,6 +110,10 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Manipulated text data output using string functions like UPPER() to standardize formatting.
 * Used column aliasing (AS) to rename output columns for cleaner reporting.
 
+### Phase 13: Date & Time Functions
+* Generated dynamic system timestamps using the NOW() function.
+* Applied column aliases to create context-specific output labels (e.g., Time_Intercepted) for real-time reporting.
+
 ---
 
 ## Upcoming Topics
@@ -132,4 +137,5 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Result restriction and sorting (LIMIT, ORDER BY)
 * Unique value isolation (DISTINCT)
 * Data formatting and string functions (UPPER)
+* Date and time generation (NOW)
 * Clean SQL structure and alias optimization
