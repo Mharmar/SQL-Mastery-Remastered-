@@ -14,7 +14,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * **03_Relational_Architecture/**: Foreign keys, constraints, and multi-table setup.
 * **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
 * **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
-* **06_Data_Refinement/**: Sorting, limiting, distinct values, string formatting, and time functions.
+* **06_Master_Challenge/**: Sorting, limiting, distinct values, time functions, and string analysis.
 
 ---
 
@@ -114,6 +114,10 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Generated dynamic system timestamps using the NOW() function.
 * Applied column aliases to create context-specific output labels (e.g., Time_Intercepted) for real-time reporting.
 
+### Phase 14: String Analysis & Sorting
+* Calculated character counts of string data using the LENGTH() function.
+* Dynamically sorted results in ascending order (ASC) by referencing newly created column aliases in the ORDER BY clause.
+
 ---
 
 ## Upcoming Topics
@@ -134,8 +138,8 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Foreign key relationships and Constraints
 * Aggregation and group filtering (WHERE vs. HAVING)
 * Subqueries and dynamic data retrieval
-* Result restriction and sorting (LIMIT, ORDER BY)
+* Result restriction and sorting (LIMIT, ORDER BY ASC/DESC)
 * Unique value isolation (DISTINCT)
-* Data formatting and string functions (UPPER)
+* String formatting and analysis (UPPER, LENGTH)
 * Date and time generation (NOW)
 * Clean SQL structure and alias optimization
