@@ -15,6 +15,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
 * **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
 * **06_Master_Challenge/**: Sorting, limiting, distinct values, time functions, and string analysis.
+  * **Daily_Streak_Practice/**: Files 18-29. Short, focused queries executed to maintain daily coding consistency and reinforce core concepts (Filtering, Aggregation, System Functions) during busy academic periods.
 
 ---
 
@@ -118,6 +119,16 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Calculated character counts of string data using the LENGTH() function.
 * Dynamically sorted results in ascending order (ASC) by referencing newly created column aliases in the ORDER BY clause.
 
+### Phase 15: String Manipulation & Profiling
+* Combined multiple columns and text strings into a single unified output using the CONCAT() function (e.g., generating User_Profile).
+
+### Phase 16: System Metadata Functions
+* Retrieved current active environment and user session details using the DATABASE() and USER() functions.
+
+### Phase 17: Range Filtering & Syntax Reinforcement
+* Filtered datasets within specific numerical ranges using the BETWEEN operator.
+* Reinforced core filtering and grouping logic (IN, LIKE, COUNT, GROUP BY) through rapid, daily streak-maintenance queries.
+
 ---
 
 ## Upcoming Topics
@@ -139,7 +150,9 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Aggregation and group filtering (WHERE vs. HAVING)
 * Subqueries and dynamic data retrieval
 * Result restriction and sorting (LIMIT, ORDER BY ASC/DESC)
+* Advanced filtering (IN, BETWEEN, LIKE)
 * Unique value isolation (DISTINCT)
-* String formatting and analysis (UPPER, LENGTH)
+* String formatting, analysis, and combining (UPPER, LENGTH, CONCAT)
 * Date and time generation (NOW)
+* System environment tracking (DATABASE, USER)
 * Clean SQL structure and alias optimization
