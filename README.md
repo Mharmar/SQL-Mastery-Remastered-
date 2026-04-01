@@ -15,7 +15,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
 * **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
 * **06_Master_Challenge/**: Sorting, limiting, distinct values, time functions, and string analysis.
-  * **Daily_Streak_Practice/**: Files 18-29. Short, focused queries executed to maintain daily coding consistency and reinforce core concepts (Filtering, Aggregation, System Functions) during busy academic periods.
+  * **Daily_Streak_Practice/**: Short, focused queries executed to maintain daily coding consistency and reinforce core concepts during academic midterm periods.
 
 ---
 
@@ -38,12 +38,22 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * LogID (Primary Key)
 * ThreatType
 * Status
-* (Additional columns based on schema)
 
 **4. Protected_Users**
 * Username
 * DeviceType
-* (Additional columns based on schema)
+
+**5. Legacy_Incidents (Unnormalized)**
+* IncidentID (Primary Key)
+* EmployeeName
+* Department
+* Threats_Detected (Comma-separated values)
+
+**6. Incidents_1NF (Normalized)**
+* IncidentID (Composite Primary Key)
+* EmployeeName
+* Department
+* Threat_Detected (Composite Primary Key)
 
 ---
 
@@ -129,15 +139,25 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Filtered datasets within specific numerical ranges using the BETWEEN operator.
 * Reinforced core filtering and grouping logic (IN, LIKE, COUNT, GROUP BY) through rapid, daily streak-maintenance queries.
 
+### Phase 18: Advanced String Replacement & NULL Handling
+* Modified specific text strings dynamically within query results using the REPLACE() function.
+* Handled missing data gracefully by providing default fallback values using the COALESCE() function.
+
+### Phase 19: Database Normalization (First Normal Form - 1NF)
+* Identified non-atomic data (comma-separated values) using pattern matching (LIKE '%,%').
+* Architected a new normalized table structure ensuring every column holds atomic values.
+* Implemented a Composite Primary Key (IncidentID + Threat_Detected) to maintain entity integrity in a one-to-many relationship.
+
 ---
 
 ## Upcoming Topics
 
+* Second Normal Form (2NF)
+* Third Normal Form (3NF)
 * RIGHT JOIN
 * CTE (Common Table Expressions)
 * Indexing
 * Query optimization
-* Normalization
 
 ---
 
@@ -147,12 +167,13 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Single-table queries
 * Multi-table joins (INNER and LEFT)
 * Foreign key relationships and Constraints
+* Database Normalization (1NF & Composite Primary Keys)
 * Aggregation and group filtering (WHERE vs. HAVING)
 * Subqueries and dynamic data retrieval
 * Result restriction and sorting (LIMIT, ORDER BY ASC/DESC)
 * Advanced filtering (IN, BETWEEN, LIKE)
 * Unique value isolation (DISTINCT)
-* String formatting, analysis, and combining (UPPER, LENGTH, CONCAT)
+* String manipulation and NULL handling (UPPER, LENGTH, CONCAT, REPLACE, COALESCE)
 * Date and time generation (NOW)
 * System environment tracking (DATABASE, USER)
 * Clean SQL structure and alias optimization
