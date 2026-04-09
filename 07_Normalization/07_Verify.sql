@@ -1,0 +1,3 @@
+USE JMS_Salapare;
+
+SHOW TABLES;
