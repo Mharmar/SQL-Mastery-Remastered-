@@ -15,7 +15,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * **04_Joins/**: INNER JOIN, LEFT JOIN, and table aliasing.
 * **05_Advanced_Queries/**: Subqueries and dynamic data retrieval.
 * **06_Master_Challenge/**: Sorting, limiting, distinct values, time functions, and string analysis.
-  * **Daily_Streak_Practice/**: Short, focused queries executed to maintain daily coding consistency and reinforce core concepts during academic midterm periods.
+  * **Daily_Micro_Drills/**: Files 18-30. Short, focused queries executed to maintain daily coding consistency and reinforce core concepts during academic midterm periods.
 
 ---
 
@@ -148,6 +148,9 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Architected a new normalized table structure ensuring every column holds atomic values.
 * Implemented a Composite Primary Key (IncidentID + Threat_Detected) to maintain entity integrity in a one-to-many relationship.
 
+### Phase 20: Boundary Aggregation
+* Utilized MIN() and MAX() aggregate functions within a single query to extract the lowest and highest boundaries of a dataset concurrently (e.g., finding the first and latest system logs).
+
 ---
 
 ## Upcoming Topics
@@ -168,7 +171,7 @@ Build real understanding through hands-on execution, clean schema design, and pr
 * Multi-table joins (INNER and LEFT)
 * Foreign key relationships and Constraints
 * Database Normalization (1NF & Composite Primary Keys)
-* Aggregation and group filtering (WHERE vs. HAVING)
+* Aggregation and boundaries (COUNT, MIN, MAX, WHERE vs. HAVING)
 * Subqueries and dynamic data retrieval
 * Result restriction and sorting (LIMIT, ORDER BY ASC/DESC)
 * Advanced filtering (IN, BETWEEN, LIKE)
