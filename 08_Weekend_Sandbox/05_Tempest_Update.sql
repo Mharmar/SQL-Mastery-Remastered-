@@ -1,8 +1,5 @@
 USE Jura_Tempest;
 
-SELECT 
-    Disaster_Rank,
-    COUNT(*) AS Total_Citizens
-FROM Citizens
-GROUP BY Disaster_Rank
-HAVING COUNT(*) > 1;
+UPDATE Citizens
+SET Disaster_Rank = 'Hazard'
+WHERE Name = 'Gobta';
